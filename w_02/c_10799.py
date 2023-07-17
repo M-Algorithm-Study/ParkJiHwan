@@ -1,7 +1,7 @@
 import sys
 input = sys.stdin.readline
 
-stick = list(input())
+stick = input()
 p = ')'
 cnt = 0
 total = 0
