@@ -10,7 +10,7 @@ def dfs(n, lst):
             v[j] = 0       
 
 N, M = map(int, input().split())
-num_list = sorted(list(map(int, input().split())))
+num_list = sorted(list(map(int, input().split()))) # 숫자를 받음
 ans = []
 v = [0] * N
 
