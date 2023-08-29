@@ -89,12 +89,12 @@ while True:
     visited = [[0] * n for _ in range(n)]
     visited[start_y][start_x] = 1
     fishes = []  # 잡아먹힐 물고기들
-    before_time = 0
+    before_t = 0
     
     while queue:
         x, y, t = queue.popleft()
 
-        if fishes and before_t != t:
+        if fishes and before_t != t: # 잡을 물고기가 있을 때
             break
             
         for dir in range(4):
