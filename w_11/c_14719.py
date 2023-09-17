@@ -12,7 +12,6 @@ for i in range(w):
         else:
             visited[i][j] = 0
 
-
 rain = 0
 for x in range(h):
     switch = 0
