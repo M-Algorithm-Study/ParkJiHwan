@@ -13,17 +13,17 @@ for i in range(w):
             visited[i][j] = 0
 
 rain = 0
-for x in range(h):
+for y in range(h):
     switch = 0
     tmp = 0
-    for y in range(w):
-        if switch == 0 and visited[y][x] == 1:
-            switch += 1
+    for x in range(w):
+        if switch == 0 and visited[x][y] == 1:
+            switch += 1 # 막혀있다.
         
-        elif switch == 1 and visited[y][x] == 0:
+        elif switch == 1 and visited[x][y] == 0:
             tmp += 1
         
-        elif switch == 1 and visited[y][x] == 1:
+        elif switch == 1 and visited[x][y] == 1:
             rain += tmp
             tmp = 0
 

@@ -1,8 +1,6 @@
 import sys
 input = sys.stdin.readline
 
-import sys
-
 S1 = input().strip().upper()
 S2 = input().strip().upper()
 len1 = len(S1)
@@ -17,3 +15,6 @@ for i in range(1, len1 + 1):
             matrix[i][j] = max(matrix[i - 1][j], matrix[i][j - 1])
 
 print(matrix[-1][-1])
+
+# for row in matrix:
+#     print(row)
