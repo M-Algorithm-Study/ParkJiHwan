@@ -20,7 +20,7 @@ while queue:
     for dir in range(4):
         if 0 <= y + dy[dir] < n and 0 <= x + dx[dir] < m:
             if matrix[y + dy[dir]][x + dx[dir]] == 'P': # 탐색되는 위치에 사람이 있다면
-                matrix[y + dy[dir]][x + dx[dir]] = 'O' # 탐색되는 위치를 빈공간으로 바꾸고
+                matrix[y + dy[dir]][x + dx[dir]] = 'X' # 탐색되는 위치를 벽으로 바꾸고
                 cnt += 1 # 사람 수를 1명 더한다.
                 queue.append((y + dy[dir], x + dx[dir])) # 해당 위치에서 다시 탐색
             
