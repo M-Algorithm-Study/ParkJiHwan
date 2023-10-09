@@ -3,19 +3,19 @@ input = sys.stdin.readline
 
 n = int(input())
 cnt = 0
-ans = [n]
+ans = [[n]]
 
-while 1 not in ans:
-    for k in ans:
+while 1 not in ans[cnt]:
+    ans.append([])
+    for k in ans[cnt]:
         if k % 3 == 0:
-            ans.append(k / 3)
+            ans[cnt + 1].append(k // 3)
             
-        elif k % 2 == 0:
-            ans.append(k / 2)
+        if k % 2 == 0:
+            ans[cnt + 1].append(k // 2)
             
-        else:
-            ans.append(k - 1)
+        ans[cnt + 1].append(k - 1)
         
-        cnt += 1
+    cnt += 1
 
 print(cnt)
