@@ -2,11 +2,11 @@ import sys
 input = sys.stdin.readline
 
 n = int(input())
-cnt = 0
+cnt = 0 # 연산 횟수
 ans = [[n]]
 
-while 1 not in ans[cnt]:
-    ans.append([])
+while 1 not in ans[cnt]: # 1이 존재하면 종료
+    ans.append([]) # 빈 리스트를 추가 (ans[cnt + 1])
     for k in ans[cnt]:
         if k % 3 == 0:
             ans[cnt + 1].append(k // 3)
