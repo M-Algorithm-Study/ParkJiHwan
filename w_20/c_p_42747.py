@@ -18,7 +18,7 @@ def solution(citations):
             # H-Index를 현재 위치 (인덱스 + 1)로 업데이트
             # 인덱스는 0부터 시작하므로 1을 더함
             answer = i + 1
-
+    
     # 계산된 H-Index 반환
     return answer
 
